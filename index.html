@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/pokebola.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="Js/jquery.js"></script>
+    <script src="Js/bootstrap.js"></script>
+    <script src="Js/poke.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/site.css" />
+
+    <title>PokeAPI</title>
+</head>
+
+<body>
+    <div id="modal" class="modal">
+        <div style="text-align: center;">
+            <h2>Carregando</h2>
+        </div>
+        <div class="loader">
+            <img src="images/loading.gif" alt="">
+        </div>
+    </div>
+    <header>
+        <nav class="menu navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="menuPokemonsnavbar-brand"> POKÉMONS </a>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <img class="logoPokemon" src="images/pokemon.png" />
+                        <img class="logoPokebola" src="images/pokebola.png" />
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                    <h3 class="Titulo"> PokeAPI </h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+
+            <br />
+
+            <div class="row" id="pokemons">
+            </div>
+        </main>
+        <div id="main"></div>
+    </div>
+
+    <footer class="text-center">
+        <p>&copy; 2020 - Luiz Gustavo de Freitas</p>
+    </footer>
+</body>
+
+</html>
